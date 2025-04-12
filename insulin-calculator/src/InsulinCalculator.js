@@ -3,10 +3,10 @@ import './InsulinCalculator.css';
 
 export default function InsulinCalculator() {
   const [carbs, setCarbs] = useState('');
-  const [ratio, setRatio] = useState('');
+  const [ratio, setRatio] = useState(18);
   const [currentBG, setCurrentBG] = useState('');
-  const [targetBG, setTargetBG] = useState('');
-  const [sensitivity, setSensitivity] = useState('');
+  const [targetBG, setTargetBG] = useState(100);
+  const [sensitivity, setSensitivity] = useState(80);
   const [result, setResult] = useState(null);
 
   const calculateDosage = () => {
@@ -43,7 +43,11 @@ export default function InsulinCalculator() {
 
       <div className="input-group">
         <label>Insulin-to-Carb Ratio:</label>
-        <input type="number" value={ratio} onChange={e => setRatio(e.target.value)} />
+        <input
+          type="number"
+          value={ratio}
+          onChange={e => setRatio(e.target.value)}
+        />
       </div>
 
       <div className="input-group">
@@ -53,12 +57,20 @@ export default function InsulinCalculator() {
 
       <div className="input-group">
         <label>Target Blood Glucose (mg/dL):</label>
-        <input type="number" value={targetBG} onChange={e => setTargetBG(e.target.value)} />
+        <input
+          type="number"
+          value={targetBG}
+          onChange={e => setTargetBG(e.target.value)}
+        />
       </div>
 
       <div className="input-group">
         <label>Insulin Sensitivity Factor:</label>
-        <input type="number" value={sensitivity} onChange={e => setSensitivity(e.target.value)} />
+        <input
+          type="number"
+          value={sensitivity}
+          onChange={e => setSensitivity(e.target.value)}
+        />
       </div>
 
       <button onClick={calculateDosage} className="calculate-button">
