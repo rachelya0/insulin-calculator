@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/insulin-calculator/static/css/main.4a5508fa.css",
+    "main.js": "/insulin-calculator/static/js/main.451b83ae.js",
+    "static/js/453.1c877fa7.chunk.js": "/insulin-calculator/static/js/453.1c877fa7.chunk.js",
+    "index.html": "/insulin-calculator/index.html",
+    "main.4a5508fa.css.map": "/insulin-calculator/static/css/main.4a5508fa.css.map",
+    "main.451b83ae.js.map": "/insulin-calculator/static/js/main.451b83ae.js.map",
+    "453.1c877fa7.chunk.js.map": "/insulin-calculator/static/js/453.1c877fa7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a5508fa.css",
+    "static/js/main.451b83ae.js"
+  ]
+}
